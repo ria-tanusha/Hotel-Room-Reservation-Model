@@ -1,7 +1,5 @@
 package com.hotel.room.reservation.model.view;
 
-import java.util.List;
-
 public class ViewReservationResponse {
 
 	private String checkInDt;
@@ -11,6 +9,24 @@ public class ViewReservationResponse {
 	private int guestCount;
 	private String roomtype;
 	private StatusView status;
+	
+	public int getRoomCounnt() {
+		return roomCounnt;
+	}
+
+	public void setRoomCounnt(int roomCounnt) {
+		this.roomCounnt = roomCounnt;
+	}
+
+	public String getRoomtype() {
+		return roomtype;
+	}
+
+	public void setRoomtype(String roomtype) {
+		this.roomtype = roomtype;
+	}
+
+	
 
 	public GuestView getGuest() {
 		return guest;
